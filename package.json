@@ -2,9 +2,11 @@
   "name": "traportfolio",
   "version": "0.0.0",
   "scripts": {
-    "dev": "concurrently \"vite\" \"npm run start-mock\"",
-    "serve": "vite preview",
-    "build": "vite build",
+    "start": "concurrently farm start  \"npm run start-mock\"",
+    "dev": "concurrently farm start  \"npm run start-mock\"",
+    "build": "farm build",
+    "preview": "farm preview",
+    "clean": "farm clean",
     "lint": "eslint --fix --cache --ext .ts,.vue src",
     "lint:nofix": "eslint --cache --ext .ts,.vue src",
     "format": "prettier --cache --write \"src/**/*.{vue,ts}\"",
@@ -22,6 +24,10 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@farmfe/cli": "^1.0.2",
+    "@farmfe/core": "^1.2.0",
+    "@farmfe/js-plugin-sass": "^2.8.0",
+    "@farmfe/plugin-sass": "^1.0.5",
     "@iconify/json": "^2.2.215",
     "@openapitools/openapi-generator-cli": "^2.13.4",
     "@stoplight/prism-cli": "^5.8.1",
@@ -39,7 +45,6 @@
     "sass": "^1.77.6",
     "ts-morph": "^22.0.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.12",
     "vite-plugin-purge-icons": "^0.10.0",
     "vue-tsc": "^2.0.19"
   },
