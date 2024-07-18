@@ -2,9 +2,11 @@ import { defineConfig } from '@farmfe/core'
 import path from 'path'
 import VuePlugin from '@vitejs/plugin-vue'
 import PurgeIcons from 'vite-plugin-purge-icons'
+import sass from '@farmfe/js-plugin-sass'
 
 export default defineConfig({
   compilation: {
+    sourcemap: false,
     resolve: {
       alias: {
         '/@/': path.join(process.cwd(), 'src').replace(/\\/g, '/')
@@ -23,12 +25,10 @@ export default defineConfig({
     }
   },
   plugins: [
-    [
-      '@farmfe/plugin-sass',
-      {
-        additionalData: `@import "${path.join(process.cwd(), 'src').replace(/\\/g, '/')}/styles/common.scss";`
-      }
-    ]
+    sass({
+      legacy: true,
+      additionalData: '@import "/@/styles/common.scss";'
+    })
   ],
   vitePlugins: [VuePlugin(), PurgeIcons()]
 })
