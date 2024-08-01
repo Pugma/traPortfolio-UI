@@ -20,17 +20,17 @@
     "axios": "^1.7.2",
     "pinia": "^2.1.7",
     "ress": "^5.0.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   },
   "devDependencies": {
-    "@farmfe/cli": "^1.0.2",
+    "@farmfe/cli": "^1.0.3",
     "@farmfe/core": "^1.2.0",
     "@farmfe/js-plugin-sass": "^2.8.0",
     "@farmfe/plugin-sass": "^1.0.5",
-    "@iconify/json": "^2.2.215",
+    "@iconify/json": "^2.2.233",
     "@openapitools/openapi-generator-cli": "^2.13.4",
-    "@stoplight/prism-cli": "^5.8.1",
+    "@stoplight/prism-cli": "^5.8.3",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
     "@vitejs/plugin-vue": "^4.6.2",
@@ -42,11 +42,11 @@
     "node-fetch": "^3.3.2",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.7",
-    "sass": "^1.77.6",
+    "sass": "^1.77.8",
     "ts-morph": "^22.0.0",
     "typescript": "^5.4.5",
     "vite-plugin-purge-icons": "^0.10.0",
-    "vue-tsc": "^2.0.19"
+    "vue-tsc": "^2.0.29"
   },
   "private": true,
   "type": "module"
